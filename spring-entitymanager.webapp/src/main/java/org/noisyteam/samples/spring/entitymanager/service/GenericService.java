@@ -1,6 +1,5 @@
 package org.noisyteam.samples.spring.entitymanager.service;
 
-import javax.persistence.Entity;
 import javax.persistence.EntityManager;
 import javax.persistence.PersistenceContext;
 import javax.persistence.Query;
