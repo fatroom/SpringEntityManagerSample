@@ -17,6 +17,7 @@
     <modules>
         <module>spring-entitymanager.webapp</module>
         <module>spring-entitymanager.entapp</module>
+        <module>spring-entitymanager.jpa</module>
     </modules>
 
     <build>

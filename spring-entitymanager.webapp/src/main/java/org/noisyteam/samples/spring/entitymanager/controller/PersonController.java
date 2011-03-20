@@ -11,11 +11,12 @@ import org.springframework.web.bind.annotation.RequestMethod;
 /**
  * @author Roman Romanchuk (fatroom@gmail.com)
  */
-@Controller("/person")
+@Controller
 public class PersonController {
     @Autowired
     private PersonService personService;
 
+    @RequestMapping("/list")
     public String list(Model model) {
         model.addAttribute("persons", personService.findAllPersons());
         return "WEB-INF/view/person/list.jsp";
@@ -28,6 +29,7 @@ public class PersonController {
 
     @RequestMapping(value = "/create", method = RequestMethod.POST)
     public String create(Person person) {
+        System.out.println("Person: "+person);
         personService.merge(person);
         return "WEB-INF/view/person/list.jsp";
     }

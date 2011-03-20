@@ -10,7 +10,7 @@
   <groupId>org.noisyteam.samples</groupId>
   <artifactId>spring-entitymanager.entapp</artifactId>
   <version>1.0-SNAPSHOT</version>
-  <name>Web application module for Spring Entitymanager DI sample</name>
+  <name>Enterprise application module for Spring Entitymanager DI sample</name>
   <packaging>ear</packaging>
   <dependencies>
     <dependency>
